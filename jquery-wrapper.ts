@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 
-type SelectorType = JQuery.Selector | JQuery.htmlString | HTMLSelectElement | Element | ArrayLike<Element> | JQuery<Element> | Window | Document;
+export type Selector = JQuery.Selector | JQuery.htmlString | HTMLSelectElement | Element | ArrayLike<Element> | JQuery<Element> | Window | Document;
 
 interface JqueryWrapper extends JQuery<HTMLElement> {
     /**
@@ -16,7 +16,7 @@ interface JqueryWrapper extends JQuery<HTMLElement> {
      *  -or-
      * an existing jQuery object to clone.
      */
-    new (selector : SelectorType) : JqueryWrapper
+    new (selector : Selector) : JqueryWrapper
 }
 
 
@@ -24,7 +24,7 @@ interface JqueryWrapper extends JQuery<HTMLElement> {
  * a "wrapper class" behaves like jquery object.
  * new JqueryWrapper(".something").attr("hello", "world").css({color: "red"}).blah().blah()
  */
-const JqueryWrapper = function(this : JqueryWrapper, selector : SelectorType) {
+const JqueryWrapper = function(this : JqueryWrapper, selector : Selector) {
     // first take a jquery object from regular jquery syntax
     const $element : JQuery<HTMLElement> =
         // @ts-ignore
