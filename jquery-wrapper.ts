@@ -1,6 +1,8 @@
 import $ from "jquery";
 
 
+type SelectorType = JQuery.Selector | JQuery.htmlString | HTMLSelectElement | Element | ArrayLike<Element> | JQuery<Element> | Window | Document;
+
 interface JqueryWrapper extends JQuery<HTMLElement> {
     /**
      * @param selector
