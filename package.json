@@ -1,6 +1,6 @@
 {
   "name": "jquery-wrapper-class",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A class wrapper to turn standard jquery framework into ES6 class library.",
   "main": "jquery-wrapper.js",
   "scripts": {
