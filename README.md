@@ -4,7 +4,7 @@ A class wrapper to turn standard jquery framework into ES6 class library.
 
 # Installation
 
-`npm install jquery-wrapper --save`
+`npm install jquery-wrapper-class --save`
 
 # Usage
 

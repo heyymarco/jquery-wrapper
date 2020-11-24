@@ -1,0 +1,31 @@
+{
+  "name": "jquery-wrapper-class",
+  "version": "1.0.0",
+  "description": "A class wrapper to turn standard jquery framework into ES6 class library.",
+  "main": "jquery-wrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyymarco/jquery-wrapper.git"
+  },
+  "type": "module",
+  "keywords": [
+    "jquery",
+    "wrapper",
+    "class"
+  ],
+  "author": "HeyMarco (Yunus Kurniawan)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyymarco/jquery-wrapper/issues"
+  },
+  "homepage": "https://github.com/heyymarco/jquery-wrapper#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.4"
+  }
+}
