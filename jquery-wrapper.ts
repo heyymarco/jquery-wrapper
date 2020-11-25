@@ -1,7 +1,9 @@
 import $ from "jquery";
 
 
-export type Selector = JQuery.Selector | JQuery.htmlString | HTMLSelectElement | Element | ArrayLike<Element> | JQuery<Element> | Window | Document;
+declare global {
+    type Selector = JQuery.Selector | JQuery.htmlString | HTMLSelectElement | Element | ArrayLike<Element> | JQuery<Element> | Window | Document;
+}
 
 interface JqueryWrapper extends JQuery<HTMLElement> {
     /**
