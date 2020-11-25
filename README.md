@@ -36,7 +36,7 @@ btn1.addClass("jquery-fun"); // call any jquery function
 let children = btn1.find(".good-child"); // call another jquery function
 ```
 
-# TypeScript
+### TypeScript
 
 ```ts
 import JqueryWrapper, { Selector } from "jquery-wrapper-class";
