@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/heyymarco/jquery-wrapper.git"
   },
-  "type": "module",
   "keywords": [
     "jquery",
     "wrapper",
