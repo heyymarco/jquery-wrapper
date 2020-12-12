@@ -18,7 +18,10 @@ interface JqueryWrapper extends JQuery<HTMLElement> {
      *  -or-
      * an existing jQuery object to clone.
      */
-    new (selector : Selector) : JqueryWrapper
+    new (selector : Selector) : JqueryWrapper;
+
+
+    jQuery : JQueryStatic;
 }
 
 
@@ -56,6 +59,10 @@ const JqueryWrapper = function(this : JqueryWrapper, selector : Selector) {
 // don't forget to prototyping our "function class" with jquery's prototype (the .fn)
 // so all jquery functions (including plugins) will be imported into our class
 JqueryWrapper.prototype = $.fn;
+
+
+// you might need the direct access to the jquery:
+JqueryWrapper.jQuery = $;
 
 
 // export the JqueryWrapper class:
